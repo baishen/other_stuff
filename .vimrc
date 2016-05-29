@@ -21,7 +21,7 @@ Plugin 'vim-scripts/Pydiction'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Townk/vim-autoclose'
 
-" python syntax checker
+" syntax checker
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'vim-scripts/indentpython.vim'
@@ -60,7 +60,9 @@ let python_highlight_all=1
 let g:pydiction_location='/home/baishen/.vim/bundle/Pydiction/complete-dict'
 let g:pydiction_menu_height=4
 
-let NERDTreeIgnore=['\.pyc$', '\~$'] 
+let NERDTreeIgnore=['\.pyc$', '\~$']
+let NERDTreeShowHidden=1
+let g:NERDTreeWinSize=20
 
 set noswapfile
 set nu
@@ -79,10 +81,10 @@ colorscheme solarized
 set backspace=indent,eol,start
 
 nnoremap <space> za
-au BufNewFile,BufRead *.py,*pyw,*.c,*.h set tabstop=4 
+au BufNewFile,BufRead *.py,*pyw,*.c,*.h,*.cpp,*.cc set tabstop=4 
 au BufRead,BufNewFile *.py,*pyw,*.c,*.h,*.cpp,*.cc set shiftwidth=4
 au BufRead,BufNewFile *.py,*.pyw set expandtab
-au BufRead,BufNewFile *.py,*.c,*.h,*.cc set softtabstop=4
+au BufRead,BufNewFile *.py,*.c,*.h,*.cc,*.cpp set softtabstop=4
 
 highlight BadWhitespace ctermbg=red guibg=red
 
@@ -92,7 +94,7 @@ au BufNewFile,BufRead *.js, *.html, *.css set shiftwidth=2
 
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
-au BufRead,BufNewFile *.py,*.pyw, set textwidth=100
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.cc,*.cpp set textwidth=100
 
 au BufNewFile *.py,*.pyw,*.c,*.h set fileformat=unix
 
