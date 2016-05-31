@@ -41,10 +41,11 @@ Plugin 'jtratner/vim-flavored-markdown'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'nelstrom/vim-markdown-preview'
 
-" powerline
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+" vim airline
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
-" code folding
+" code folding"
 Plugin 'tmhedberg/SimpylFold'
 
 " All of your Plugins must be added before the following line
@@ -60,9 +61,16 @@ let python_highlight_all=1
 let g:pydiction_location='/home/baishen/.vim/bundle/Pydiction/complete-dict'
 let g:pydiction_menu_height=4
 
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++'
+
 let NERDTreeIgnore=['\.pyc$', '\~$']
 let NERDTreeShowHidden=1
 let g:NERDTreeWinSize=20
+
+let g:airline_theme = 'zenburn'
+
+let g:spf13_no_omni_complete=1
 
 set noswapfile
 set nu
