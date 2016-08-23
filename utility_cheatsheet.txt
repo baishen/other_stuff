@@ -1,0 +1,23 @@
+git:
+- git init
+- git clone /path/to/repo
+- git add <filename>
+- git add *
+- git commit -m "commit message"
+- git push origin master
+- git push origin <branch>
+- git checkout -b <new_branch_name>
+- git checkout master
+- git branch -d <branch_to_delete>
+- git pull #update local repo
+- git merge <branch> 
+- git diff <source> <target>
+- git status
+
+tmux:
+- tmux ls
+- prefix: ctrl+b
+- % vertical split
+- " horizontal split
+
+
