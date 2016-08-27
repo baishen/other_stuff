@@ -100,7 +100,7 @@ au BufNewFile,BufRead *.js, *.html, *.css set tabstop=2
 au BufNewFile,BufRead *.js, *.html, *.css set softtabstop=2
 au BufNewFile,BufRead *.js, *.html, *.css set shiftwidth=2
 
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /\s\+$/
 
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.cc,*.cpp set textwidth=100
 
