@@ -19,7 +19,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'ervandew/supertab'
 Plugin 'vim-scripts/Pydiction'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'Townk/vim-autoclose'
+Plugin 'Raimondi/delimitMate'
 
 " syntax checker
 Plugin 'scrooloose/syntastic'
@@ -48,6 +48,8 @@ Plugin 'vim-airline/vim-airline-themes'
 " code folding"
 Plugin 'tmhedberg/SimpylFold'
 
+Plugin 'vim-auto-save'
+
 " All of your Plugins must be added before the following line
 
 call vundle#end()            " required
@@ -71,6 +73,7 @@ let g:NERDTreeWinSize=20
 let g:airline_theme = 'zenburn'
 
 let g:spf13_no_omni_complete=1
+let g:auto_save=1
 
 set noswapfile
 set nu
