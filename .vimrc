@@ -19,7 +19,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'ervandew/supertab'
 Plugin 'vim-scripts/Pydiction'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'Raimondi/delimitMate'
+Plugin 'Townk/vim-autoclose'
 
 " syntax checker
 Plugin 'scrooloose/syntastic'
@@ -48,7 +48,8 @@ Plugin 'vim-airline/vim-airline-themes'
 " code folding"
 Plugin 'tmhedberg/SimpylFold'
 
-Plugin 'vim-auto-save'
+" auto save"
+Plugin 'vim-auto-save' 
 
 " All of your Plugins must be added before the following line
 
@@ -63,8 +64,10 @@ let python_highlight_all=1
 let g:pydiction_location='/home/baishen/.vim/bundle/Pydiction/complete-dict'
 let g:pydiction_menu_height=4
 
-let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler = 'g++'
 let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++'
+
+let g:SuperTabCrMapping = 0
 
 let NERDTreeIgnore=['\.pyc$', '\~$']
 let NERDTreeShowHidden=1
@@ -73,7 +76,6 @@ let g:NERDTreeWinSize=20
 let g:airline_theme = 'zenburn'
 
 let g:spf13_no_omni_complete=1
-let g:auto_save=1
 
 set noswapfile
 set nu
