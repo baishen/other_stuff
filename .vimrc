@@ -19,7 +19,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'ervandew/supertab'
 Plugin 'vim-scripts/Pydiction'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'Townk/vim-autoclose'
+Plugin 'jiangmiao/auto-pairs'
+" Plugin 'Townk/vim-autoclose'
 
 " syntax checker
 Plugin 'scrooloose/syntastic'
