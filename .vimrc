@@ -50,7 +50,10 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tmhedberg/SimpylFold'
 
 " auto save"
-Plugin 'vim-auto-save' 
+Plugin 'vim-auto-save'
+
+" verilog"
+Plugin 'vhda/verilog_systemverilog.vim'
 
 " All of your Plugins must be added before the following line
 
