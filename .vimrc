@@ -122,3 +122,5 @@ au VimEnter * NERDTree
 autocmd FileType python set autoindent
 autocmd FileType python set foldmethod=indent
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+
+set clipboard=exclude:.*
